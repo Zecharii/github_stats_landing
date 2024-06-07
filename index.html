@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>GitHub Stats</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="intro" id="intro">
+                <img src="{{ url_for('static', filename='cover.jpg') }}" alt="Cover Image">
+                <h1>GitHub Stats</h1>
+                <p>Your one-stop solution for GitHub user insights and analytics</p>
+                <a href="/" class="btn">Get Started</a>
+            </div>
+        </header>
+        
+        <!-- Feature Section -->
+        <section class="features" id="features">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='feature1.jpg') }}" alt="Feature 1">
+                <h3>User Insights</h3>
+                <p>Get comprehensive insights about GitHub users including their repositories, commits, issues, and more.</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='feature2.jpg') }}" alt="Feature 2">
+                <h3>Repository Details</h3>
+                <p>View detailed information about each repository such as commit counts, issues, and primary languages used.</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='feature3.jpg') }}" alt="Feature 3">
+                <h3>Data Visualizations</h3>
+                <p>Explore your data through interactive bar graphs, heat maps, and other visualizations for better insights.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About This Project</h2>
+            <p>This project was inspired by the need for a comprehensive tool to analyze GitHub user data efficiently. As developers, we often found ourselves needing quick insights into our or others' GitHub activity. This dashboard is a solution to that need, providing detailed analytics and visualizations in an easy-to-use format.</p>
+            <p>This is a Portfolio Project for Holberton School. Check out the <a href="https://github.com/your-repo">GitHub repository</a> for more details.</p>
+            <h3>Team Members</h3>
+            <ul class="team">
+                <li>
+                    <p>John Doe</p>
+                    <a href="https://www.linkedin.com/in/johndoe">LinkedIn</a> | 
+                    <a href="https://github.com/johndoe">GitHub</a> | 
+                    <a href="https://twitter.com/johndoe">Twitter</a>
+                </li>
+                <li>
+                    <p>Jane Smith</p>
+                    <a href="https://www.linkedin.com/in/janesmith">LinkedIn</a> | 
+                    <a href="https://github.com/janesmith">GitHub</a> | 
+                    <a href="https://twitter.com/janesmith">Twitter</a>
+                </li>
+                <!-- Add more team members as needed -->
+            </ul>
+        </section>
+
+        <!-- Optional Video Section -->
+        <section class="video" id="video">
+            <h2>Project Introduction Video</h2>
+            <video controls>
+                <source src="{{ url_for('static', filename='intro_video.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <footer id="contact">
+            <p>&copy; 2024 GitHub Stats. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
